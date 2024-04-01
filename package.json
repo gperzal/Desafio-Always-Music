@@ -1,0 +1,30 @@
+{
+  "name": "always-music",
+  "version": "1.0.0",
+  "description": "Aplicación web que permite a los usuarios subir la URL de una imagen para convertirla a escala de grises. Este proyecto fue desarrollado siguiendo el patrón MVC para organizar el código de manera eficiente y clara.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gperzal/Desafio-Always-Music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gperzal/Desafio-Always-Music/issues"
+  },
+  "homepage": "https://github.com/gperzal/Desafio-Always-Music#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
