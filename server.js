@@ -31,7 +31,12 @@ if (args.length > 0) {
         try {
             switch (comando) {
                 case 'nuevo':
-                    agregarEstudiante(args[1], args[2], args[3], args[4]);
+                   
+                    if (args.length === 5) {
+                        await agregarEstudiante(args[1], args[2], args[3], args[4]);
+                    } else {
+                        console.log('Por favor, proporciona el nombre completo, RUT, curso y nivel del estudiante.');
+                    }
                     break;
                 case 'consulta':
                     await obtenerEstudiantes();
